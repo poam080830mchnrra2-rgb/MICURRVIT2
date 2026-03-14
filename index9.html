@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Documento sin título</title>
+        <style type="text/css">
+			h2
+			{
+				font-family:"Algerian";
+				font-size:120px;
+				color:#009;
+				text-align:center;
+			}
+			p3
+			{
+				font-family:"Calibri";
+				font-size:30px;
+				color:#006;
+			}
+			body {
+	color: #F0F0F0;
+}
+body {
+	background-color: #666;
+}
+        </style>
+
+
+</head>
+
+<body> 
+	<h2>INICIAR SESIÓN</h2>
+   <form name="login" align="center">
+      	<p3>Usuario</p3>
+     	 <input type="text" name="usuario" align="center">
+     	 <p3>Contraseña</p3>
+     	 <input type="password" name="pin"/>
+     	 <input type="button" onclick="check(this.form)" value="Ingresar"/>
+    	
+        </form>
+        <script language="javascript">
+			function check(from)
+			{
+				if(form.usuario.value=="Marlen"&&form.pin.value=="080830")
+				window.open('index0.html')
+			else
+			alert("Contraseña o usuario incorrecto")
+			}
+		
+		
+		</script>
+    
+</body>
+</html>

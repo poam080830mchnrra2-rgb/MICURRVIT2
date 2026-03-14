@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<link rel="shortcut icon" href="icono.png" />
+
+<meta charset="UTF-8">
+<title>Login Marlen</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial, Helvetica, sans-serif;
+background: linear-gradient(135deg,#0d47a1,#42a5f5);
+}
+
+.login-box{
+background:white;
+padding:40px;
+border-radius:18px;
+width:320px;
+text-align:center;
+box-shadow:0 15px 30px rgba(0,0,0,0.25);
+}
+
+h2{
+color:black;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:15px;
+color:black;
+}
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#1565c0;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#0d47a1;
+}
+
+</style>
+</head>
+
+<!-- 🔵 BANNER CENTRADO SIN TOCAR NADA DEL CÓDIGO -->
+<div style="width:100%; position:fixed; top:0; left:0; z-index:999; text-align:center;">
+    <img src="giff/Curriculum Vitae (1).gif" alt="" width="1020" height="249" style="display:inline-block;">
+</div>
+
+<body>
+
+<div class="login-box">
+
+<h2>Iniciar Sesión</h2>
+
+<form name="login">
+
+<input type="text" name="userid" placeholder="Usuario">
+
+<input type="password" name="pswrd" placeholder="Contraseña">
+
+<button type="button" onclick="check(this.form)">Entrar</button>
+
+</form>
+
+</div>
+
+<script>
+function check(form)
+{
+if(form.userid.value == "Marlen" && form.pswrd.value == "080830")
+{
+window.location="HOLA.html";
+}
+else
+{
+alert("Usuario o contraseña incorrectos");
+}
+}
+</script>
+
+</body>
+</html>
